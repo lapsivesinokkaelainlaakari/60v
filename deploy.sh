@@ -15,6 +15,7 @@ Options:
                            deploy branch.
   -n, --no-hash            Don't append the source commit's hash to the deploy
                            commit's message.
+  -d, --dns-cname          Add CNAME to the generated Github Pages.
   -c, --config-file PATH   Override default & environment variables' values
                            with those in set in the file at 'PATH'. Must be the
                            first option specified.
@@ -61,6 +62,9 @@ parse_args() {
 		elif [[ $1 = "-n" || $1 = "--no-hash" ]]; then
 			GIT_DEPLOY_APPEND_HASH=false
 			shift
+		elif [[ $1 = "-n" || $1 = "--no-hash" ]]; then
+			gh_cname=$2
+			shift 2
 		else
 			break
 		fi
@@ -139,6 +143,12 @@ main() {
 
 initial_deploy() {
 	git --work-tree "$deploy_directory" checkout --orphan $deploy_branch
+
+	#add CNAME if specified
+	if [[ -n $gh_cname ]]; then
+		echo "$gh_cname" > "$deploy_directory"/CNAME
+	fi
+
 	git --work-tree "$deploy_directory" add --all
 	commit+push
 }
