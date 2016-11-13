@@ -62,7 +62,7 @@ parse_args() {
 		elif [[ $1 = "-n" || $1 = "--no-hash" ]]; then
 			GIT_DEPLOY_APPEND_HASH=false
 			shift
-		elif [[ $1 = "-n" || $1 = "--no-hash" ]]; then
+		elif [[ $1 = "-d" || $1 = "--dns-cname" ]]; then
 			gh_cname=$2
 			shift 2
 		else
