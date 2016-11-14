@@ -9,4 +9,4 @@ Järjestetään 5.12. alkaen kello 17 [Tehtaan saunalla](http://tehtaansauna.fi)
 
 Tarjolla on makeaa ja suolaista purtavaa sekä olutta. Saunakin on lämmin.
 
-![Ölú](https://goo.gl/photos/zCTbQYKjem5RWTmA6)
+![Ölú](img/kaljaa.jpg)
