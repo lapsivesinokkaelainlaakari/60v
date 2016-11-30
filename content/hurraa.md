@@ -7,7 +7,7 @@ date = "2016-11-30T20:47:41+03:00"
 # Synttäribileet!
 Järjestetään 5.12. alkaen kello 17 [Tehtaan saunalla](http://tehtaansauna.fi).
 
-Tarjolla on makeaa ja suolaista purtavaa sekä olutta. Viiniäkin. Saunakin on lämmin.
+Tarjolla on makeaa ja suolaista purtavaa sekä olutta. Viiniäkin. Saunakin on lämmin. Saunaa varten paikan päällä on pyyhkeitä.
 
 
 Olet erittäin tervetullut, jos olet jokin seuraavista:
