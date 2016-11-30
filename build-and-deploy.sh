@@ -1,6 +1,6 @@
 #!/bin/sh
 
-hugo -d dist && ./deploy.sh --dns-cname timovirtanenjamiika.kankare.fi
+hugo -d dist && echo "timovirtanenjamiika.kankare.fi" > dist/CNAME && ./deploy.sh
 
 status=$?
 
