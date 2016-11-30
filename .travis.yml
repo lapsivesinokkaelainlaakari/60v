@@ -2,7 +2,7 @@ language: go
 install:
 - go get github.com/spf13/hugo
 before_script:
-- git clone git@github.com:lapsivesinokkaelainlaakari/60v.git themes/base16
+- git clone git@github.com:lapsivesinokkaelainlaakari/hugo-base16-theme.git themes/base16
 - git config user.name "Travis CI"
 - git config user.email "travis@travis-ci.org"
 script:
