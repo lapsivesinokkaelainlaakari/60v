@@ -1,0 +1,7 @@
+language: go
+install:
+  - go get github.com/spf13/hugo
+before_script:
+  - git clone https://github.com/lapsivesinokkaelainlaakari/hugo-base16-theme themes/base16
+script:
+  - ./build-and-deploy.sh
