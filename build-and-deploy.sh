@@ -2,8 +2,11 @@
 
 hugo -d dist && ./deploy.sh --dns-cname timovirtanenjamiika.kankare.fi
 
-if [ $? -ne 0 ]; then
-    echo "Sproink."
-fi
+status=$?
 
-echo "Have a nice day"
+if [ ${status} -ne 0 ]; then
+    echo "Sproink. Error."
+    exit ${status}
+else
+    echo "Have a nice day"
+fi
