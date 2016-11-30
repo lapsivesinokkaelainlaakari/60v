@@ -1,9 +1,15 @@
 language: go
 install:
-  - go get github.com/spf13/hugo
+- go get github.com/spf13/hugo
 before_script:
-  - git clone https://github.com/lapsivesinokkaelainlaakari/hugo-base16-theme themes/base16
-  - git config user.name "Travis CI"
-  - git config user.email "travis@travis-ci.org"
+- git clone https://github.com/lapsivesinokkaelainlaakari/hugo-base16-theme themes/base16
+- git config user.name "Travis CI"
+- git config user.email "travis@travis-ci.org"
 script:
-  - ./build-and-deploy.sh
+- "./build-and-deploy.sh"
+before_install:
+- openssl aes-256-cbc -K $encrypted_e488ba4bbe78_key -iv $encrypted_e488ba4bbe78_iv
+  -in travis_id_rsa.enc -out /tmp/travis_id_rsa -d
+- eval "$(ssh-agent -s)"
+- chmod 600 /tmp/travis_id_rsa
+- ssh-add /tmp/travis_id_rsa
