@@ -25,6 +25,7 @@ Kysyttävää? Katso FAQ kuvan alta.
 ![Ölú](kaljaa.jpg)
 
 # FAQ
-1. Olivatko kaikki kysymykset tässä?
+1. Mikä on superavec?
+    - Parempi kuin normaali avec.
+2. Olivatko kaikki kysymykset tässä?
     - Kyllä.
-
